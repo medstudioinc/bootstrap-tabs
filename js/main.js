@@ -1,11 +1,11 @@
 $(document).ready(() => {
-  let url = window.location.href.replace(/\/$/, "");
+  let url = location.href.replace(/\/$/, "");
   
-  if (window.location.hash) {
+  if (location.hash) {
     const hash = url.split("#");
     $('#myTab a[href="#'+hash[1]+'"]').tab("show");
-    url = window.location.href.replace(/\/#/, "#");
-    window.history.replaceState(null, null, url);
+    url = location.href.replace(/\/#/, "#");
+    history.replaceState(null, null, url);
     setTimeout(() => {
       $(window).scrollTop(0);
     }, 400);
@@ -20,6 +20,6 @@ $(document).ready(() => {
       newUrl = url.split("#")[0] + hash;
     }
     newUrl += "/";
-    window.history.replaceState(null, null, newUrl);
+    history.replaceState(null, null, newUrl);
   });
 });
