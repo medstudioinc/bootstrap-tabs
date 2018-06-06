@@ -6,4 +6,4 @@ In this tutorial, we'll learn how to add deep linking to the Bootstrap 4 tabs an
 
 **Available on Tuts+ June 2018**
 
-[View demo](https://geomarts.github.io/bootstrap-tabs/)
+[View demo](https://tutsplus.github.io/bootstrap-tabs/)
